@@ -1,2 +1,21 @@
-CREATE DATABASE crafty;
+CREATE DATABASE Crafty;
 
+CREATE TABLE Position (
+    PositionId int IDENTITY(1,1) PRIMARY KEY,
+    PositionName varchar(255) NOT NULL,
+);
+
+CREATE TABLE Ability (
+    AbilityId int IDENTITY(1,1) PRIMARY KEY,
+    AbilityName varchar(255) NOT NULL,
+);
+
+CREATE TABLE StepL1 (
+    StepL1Id int IDENTITY(1,1) PRIMARY KEY,
+    StepL1Name varchar(255) NOT NULL,
+);
+
+CREATE TABLE StepL2 (
+    StepL2Id int IDENTITY(1,1) PRIMARY KEY,
+    StepL2Name varchar(255) NOT NULL,
+);
